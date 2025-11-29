@@ -10,9 +10,9 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-
+    
         <script src="https://cdn.tailwindcss.com"></script>
-        <script>
+        <script>    
             tailwind.config = {
                 theme: {
                     extend: {
@@ -46,15 +46,15 @@
                     <h1 class="text-3xl font-bold tracking-wider relative z-10 italic">Textille.</h1>
                 </div>
 
-                <div class="p-6 border-b border-[#5D4037] flex items-center space-x-3 bg-[#4E342E]">
-                    <div class="w-10 h-10 rounded-full bg-white text-[#4E342E] flex items-center justify-center font-bold text-xl shadow">
+                <a href="{{ route('profile.edit') }}" class="p-6 border-b border-[#5D4037] flex items-center space-x-3 bg-[#4E342E]">
+                    <div  class="w-10 h-10 rounded-full bg-white text-[#4E342E] flex items-center justify-center font-bold text-xl shadow">
                         {{ substr(Auth::user()->name, 0, 1) }}
                     </div>
                     <div>
                         <div class="text-sm font-semibold text-white">{{ Auth::user()->name }}</div>
                         <div class="text-xs text-gray-300 uppercase tracking-wide">{{ Auth::user()->role }}</div>
                     </div>
-                </div>
+                </a>
 
                 <nav class="flex-1 overflow-y-auto py-4 px-3 space-y-1">
                     
@@ -74,7 +74,7 @@
                     </a>
                     
                     <a href="{{ route('suppliers.index') }}" class="flex items-center px-4 py-2 rounded-lg transition-colors {{ request()->routeIs('suppliers.*') ? 'bg-white text-[#4E342E] font-bold' : 'text-gray-300 hover:bg-[#5D4037] hover:text-white' }}">
-                        <i class="fi fi-ss-truck-arrow-right"></i><span> Supplier </span>
+                       <i class="fi fi-sr-truck-side mr-3"></i></i><span> Supplier </span>
                     </a>
                     @endif
 

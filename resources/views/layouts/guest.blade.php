@@ -21,6 +21,7 @@
                                 secondary: '#5D4037',
                                 light: '#D7CCC8',
                                 accent: '#8D6E63',
+                                dark: '#3E2723',
                             }
                         }
                     }

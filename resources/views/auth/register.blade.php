@@ -1,52 +1,52 @@
 <x-guest-layout>
+    <div class="text-center mb-6">
+        <h2 class="text-2xl font-bold text-gray-800">Sign Up</h2>
+        <p class="text-gray-500 text-sm mt-1">Create your account</p>
+    </div>
+
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+        <div class="mb-4">
+            <input id="name" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-textile-primary focus:ring-2 focus:ring-textile-primary outline-none text-sm" 
+                   type="text" name="name" :value="old('name')" required autofocus autocomplete="name" placeholder="Full Name">
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+        <div class="mb-4">
+            <input id="email" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-textile-primary focus:ring-2 focus:ring-textile-primary outline-none text-sm" 
+                   type="email" name="email" :value="old('email')" required autocomplete="username" placeholder="Email Address">
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
-
+        <div class="mb-4">
+            <input id="password" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-textile-primary focus:ring-2 focus:ring-textile-primary outline-none text-sm" 
+                   type="password" name="password" required autocomplete="new-password" placeholder="Password">
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
-
+        <div class="mb-4">
+            <input id="password_confirmation" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-textile-primary focus:ring-2 focus:ring-textile-primary outline-none text-sm" 
+                   type="password" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password">
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
 
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
+        <div class="flex items-center mb-6">
+            <input id="terms" type="checkbox" class="rounded border-gray-300 text-textile-primary focus:ring-textile-primary" required>
+            <label for="terms" class="ml-2 text-xs text-gray-600">
+                I agree <a href="#" class="text-textile-primary hover:underline">privacy policy & terms</a>
+            </label>
+        </div>
 
-            <x-primary-button class="ms-4">
-                {{ __('Register') }}
-            </x-primary-button>
+        <button class="w-full bg-textile-primary hover:bg-[#3E2723] text-white font-bold py-3 rounded-lg shadow-lg transition duration-200 uppercase tracking-widest text-sm">
+            SIGN UP
+        </button>
+
+        <div class="mt-6 text-center text-sm text-gray-600">
+            Already have an account? 
+            <a href="{{ route('login') }}" class="text-textile-primary font-bold hover:underline ml-1">
+                Login
+            </a>
         </div>
     </form>
 </x-guest-layout>
