@@ -9,6 +9,7 @@
 
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
@@ -58,7 +59,7 @@
                 <nav class="flex-1 overflow-y-auto py-4 px-3 space-y-1">
                     
                     <a href="{{ route('dashboard') }}" class="flex items-center px-4 py-3 rounded-lg transition-colors {{ request()->routeIs('dashboard') ? 'bg-white text-[#4E342E] font-bold shadow-lg' : 'text-gray-300 hover:bg-[#5D4037] hover:text-white' }}">
-                        <span class="mr-3 text-lg">🏠</span> Dashboard
+                        <i class="fi fi-rr-home mr-3"></i><span> Dashboard </span>
                     </a>
 
                     @if(Auth::user()->role == 'admin' || Auth::user()->role == 'staff')
