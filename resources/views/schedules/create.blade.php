@@ -21,7 +21,7 @@
                 <label class="block font-bold mb-2">Catatan</label>
                 <textarea name="notes" class="w-full border rounded px-3 py-2"></textarea>
             </div>
-            <button type="submit" style="background-color: blue; color: white; padding: 10px 20px; rounded: 5px; font-weight: bold;">Simpan Jadwal</button>
+            <button type="submit" style="background-color: #4E342E; color: white; padding: 10px 20px; rounded: 5px; font-weight: bold;">Simpan Jadwal</button>
         </form>
     </div></div></div>
 </x-app-layout>

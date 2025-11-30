@@ -29,7 +29,7 @@
                         <div class="flex items-center justify-between" style="margin-top: 20px;">
                             
                             <button type="submit" 
-                                    style="background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer; font-weight: bold;">
+                                    style="background-color: #4E342E; color: white; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer; font-weight: bold;">
                                 Simpan Data
                             </button>
 

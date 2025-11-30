@@ -56,7 +56,7 @@
                         </div>
 
                         <div class="mt-6 flex justify-between">
-                            <button type="submit" style="background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+                            <button type="submit" style="background-color: #4E342E; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
                                 Simpan Transaksi
                             </button>
                             <a href="{{ route('transactions.index') }}" style="color: gray; text-decoration: underline; margin-top: 10px;">Kembali</a>

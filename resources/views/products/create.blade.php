@@ -18,7 +18,7 @@
                             <input type="number" name="stock" class="w-full border rounded px-3 py-2" value="0" required>
                         </div>
                         <div class="mt-6">
-                            <button type="submit" style="background-color: blue; color: white; padding: 10px 20px; rounded: 5px; font-weight: bold;">Simpan</button>
+                            <button type="submit" style="background-color: #4E342E; color: white; padding: 10px 20px; rounded: 5px; font-weight: bold;">Simpan</button>
                         </div>
                     </form>
                 </div>

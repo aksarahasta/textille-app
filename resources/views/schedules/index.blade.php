@@ -6,7 +6,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="mb-4">
-                <a href="{{ route('schedules.create') }}" style="background-color: blue; color: white; padding: 10px 20px; rounded: 5px; font-weight: bold; text-decoration: none;" class="inline-block">+ Buat Jadwal Baru</a>
+                <a href="{{ route('schedules.create') }}" style="background-color: #4E342E; color: white; padding: 10px 20px; rounded: 5px; font-weight: bold; text-decoration: none;" class="inline-block">+ Buat Jadwal Baru</a>
             </div>
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">

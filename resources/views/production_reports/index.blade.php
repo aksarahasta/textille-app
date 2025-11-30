@@ -7,7 +7,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="mb-4">
                 <a href="{{ route('production-reports.create') }}" 
-                   style="background-color: blue; color: white; padding: 10px 20px; rounded: 5px; font-weight: bold; text-decoration: none;"
+                   style="background-color: #4E342E; color: white; padding: 10px 20px; rounded: 5px; font-weight: bold; text-decoration: none;"
                    class="inline-block">+ Lapor Produksi Baru</a>
             </div>
 

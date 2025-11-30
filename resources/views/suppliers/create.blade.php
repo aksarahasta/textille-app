@@ -34,7 +34,7 @@
                         </div>
 
                         <div class="flex items-center justify-between mt-6">
-                            <button type="submit" style="background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+                            <button type="submit" style="background-color: #4E342E; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
                                 Simpan Supplier
                             </button>
                             <a href="{{ route('suppliers.index') }}" style="color: gray; text-decoration: underline;">Batal</a>

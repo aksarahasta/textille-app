@@ -10,7 +10,7 @@
             
             <div class="mb-4">
                 <a href="{{ route('transactions.create') }}" 
-                   style="background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;"
+                   style="background-color: #4E342E; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;"
                    class="inline-block">
                     + Catat Transaksi Baru
                 </a>

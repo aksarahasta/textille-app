@@ -80,7 +80,7 @@
 
        <div class="grid grid-rows-2 gap-6">
             
-            <a href="{{ route('users.index') }}" class="bg-[#4E342E] rounded-xl shadow-lg p-6 flex flex-col justify-center items-center text-white text-center hover:bg-[#5D4037] transition cursor-pointer group">
+            <a href="{{ route('users.index') }}" class="bg-[#4E342E]  rounded-xl shadow-lg p-6 flex flex-col justify-center items-center text-white text-center hover:bg-[#5D4037] transition cursor-pointer group">
                 <h3 class="text-2xl font-bold mb-2 group-hover:scale-110 transition-transform">Total Pengguna</h3>
                 <p class="text-4xl font-extrabold">{{ $data['total_users'] }}</p>
                 <span class="text-sm bg-white text-[#4E342E] px-3 py-1 rounded-full mt-3 font-bold">

@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="mb-4">
                 <a href="{{ route('materials.create') }}" 
-                    style="background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;"
+                    style="background-color: #4E342E; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;"
                     class="mb-4 inline-block">
                     + Tambah Bahan Baru
                 </a>
