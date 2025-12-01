@@ -26,7 +26,7 @@
         <div class="flex justify-end mb-6">
             @if (Route::has('password.request'))
                 <a class="text-xs text-gray-500 hover:text-textile-primary font-bold hover:underline" href="{{ route('password.request') }}">
-                    Forgot Password?
+                    Lupa Password?
                 </a>
             @endif
         </div>
