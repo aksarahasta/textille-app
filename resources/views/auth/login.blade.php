@@ -12,7 +12,7 @@
         <div class="mb-4">
             <label class="block font-bold text-gray-700 text-sm mb-2" for="email">Username</label>
             <input id="email" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-textile-primary focus:ring-2 focus:ring-textile-primary outline-none transition text-sm" 
-                   type="email" name="email" :value="old('email')" required autofocus autocomplete="username" placeholder="Masukan email/username">
+                   type="email" name="email" :value="old('email')" required autofocus autocomplete="username" placeholder="Enter your email/username">
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
@@ -26,7 +26,7 @@
         <div class="flex justify-end mb-6">
             @if (Route::has('password.request'))
                 <a class="text-xs text-gray-500 hover:text-textile-primary font-bold hover:underline" href="{{ route('password.request') }}">
-                    Lupa Password?
+                    Forgot Password?
                 </a>
             @endif
         </div>
