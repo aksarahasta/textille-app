@@ -5,11 +5,14 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+
+        @if(Auth::user()->role == 'operator')
             <div class="mb-4">
                 <a href="{{ route('production-reports.create') }}" 
                    style="background-color: #4E342E; color: white; padding: 10px 20px; rounded: 5px; font-weight: bold; text-decoration: none;"
                    class="inline-block">+ Lapor Produksi Baru</a>
             </div>
+        @endif
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">

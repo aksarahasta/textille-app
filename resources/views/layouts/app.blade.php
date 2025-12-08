@@ -90,7 +90,7 @@
                     </a>
                     @endif
 
-                    @if(Auth::user()->role == 'manager' || Auth::user()->role == 'admin')
+                    @if(Auth::user()->role == 'manager' )
                     <a href="{{ route('schedules.index') }}" class="flex items-center px-4 py-2 rounded-lg transition-colors {{ request()->routeIs('schedules.*') ? 'bg-white text-[#4E342E] font-bold' : 'text-gray-300 hover:bg-[#5D4037] hover:text-white' }}">
                         <i class="fi fi-sr-calendar-clock mr-3"></i><span> Jadwal Produksi </span>
                     </a>

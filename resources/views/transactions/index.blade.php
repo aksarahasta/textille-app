@@ -8,13 +8,15 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             
-            <div class="mb-4">
-                <a href="{{ route('transactions.create') }}" 
-                   style="background-color: #4E342E; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;"
-                   class="inline-block">
-                    + Catat Transaksi Baru
-                </a>
-            </div>
+             @if(Auth::user()->role == 'staff')
+    
+                <div class="mb-4">
+                    <a href="{{ route('transactions.create') }}" class="bg-[#4E342E] hover:bg-[#3E2723] text-white font-bold py-2 px-4 rounded shadow-lg transition duration-200">
+                        + Catat Transaksi Baru
+                    </a>
+                </div>
+
+            @endif
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">

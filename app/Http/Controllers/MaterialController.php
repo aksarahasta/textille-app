@@ -90,9 +90,7 @@ class MaterialController extends Controller
         return redirect()->route('materials.index')->with('success', 'Data bahan berhasil diperbarui!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+    /***Remove the specified resource from storage.*/
     public function destroy(string $id)
     {
         // 1. Cari data berdasarkan ID

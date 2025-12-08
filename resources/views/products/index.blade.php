@@ -7,6 +7,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            @if(Auth::user()->role == 'admin')
             <div class="mb-4">
                 <a href="{{ route('products.create') }}" 
                    style="background-color: #4E342E; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;"
@@ -14,6 +15,7 @@
                     + Tambah Produk Baru
                 </a>
             </div>
+            @endif
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
@@ -23,7 +25,9 @@
                                 <th class="px-4 py-2 text-left">No</th>
                                 <th class="px-4 py-2 text-left">Nama Produk</th>
                                 <th class="px-4 py-2 text-left">Stok Ready</th>
+                                 @if(Auth::user()->role == 'admin')
                                 <th class="px-4 py-2 text-center">Aksi</th>
+                                @endif
                             </tr>
                         </thead>
                         <tbody>
@@ -36,14 +40,16 @@
                                         {{ $product->stock }} Pcs
                                     </span>
                                 </td>
+                                @if(Auth::user()->role == 'admin')
                                 <td class="px-4 py-2 text-center">
                                     <a href="{{ route('products.edit', $product->id) }}" style="color: #d97706; margin-right: 10px; font-weight: bold;">Edit</a>
-                                    
+                               
                                     <form action="{{ route('products.destroy', $product->id) }}" method="POST" class="inline-block" onsubmit="return confirm('Yakin hapus produk ini?');">
                                         @csrf @method('DELETE')
                                         <button type="submit" style="color: red; background: none; border: none; cursor: pointer; font-weight: bold;">Hapus</button>
                                     </form>
                                 </td>
+                                @endif
                             </tr>
                             @empty
                             <tr><td colspan="4" class="text-center py-4">Belum ada data produk.</td></tr>
