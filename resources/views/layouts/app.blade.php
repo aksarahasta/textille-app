@@ -96,6 +96,14 @@
                     </a>
                     @endif
 
+                    @if(Auth::user()->role == 'admin')
+                        <div class="pt-4 pb-1 px-4 text-xs font-bold text-gray-400 uppercase tracking-wider">Admin Area</div>
+                        
+                        <a href="{{ route('users.index') }}" class="flex items-center px-4 py-2 rounded-lg transition-colors {{ request()->routeIs('users.*') ? 'bg-white text-[#4E342E] font-bold' : 'text-gray-300 hover:bg-[#5D4037] hover:text-white' }}">
+                            <i class="fi fi-sr-users mr-3"></i><span> Kelola User </span>
+                        </a>
+                    @endif
+
                     <div class="pt-8 px-2">
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
@@ -104,13 +112,7 @@
                             </button>
                         </form>
                     </div>
-                    @if(Auth::user()->role == 'admin')
-                        <div class="pt-4 pb-1 px-4 text-xs font-bold text-gray-400 uppercase tracking-wider">Admin Area</div>
-                        
-                        <a href="{{ route('users.index') }}" class="flex items-center px-4 py-2 rounded-lg transition-colors {{ request()->routeIs('users.*') ? 'bg-white text-[#4E342E] font-bold' : 'text-gray-300 hover:bg-[#5D4037] hover:text-white' }}">
-                            <i class="fi fi-sr-users mr-3"></i><span> Kelola User </span>
-                        </a>
-                    @endif
+                    
                 </nav>
             </aside>
 
